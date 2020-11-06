@@ -19,6 +19,7 @@ let grayMap = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{
 grayMap.addTo(myMap);
 
 d3.json(link, function(data) {
+  console.log(data)
   function styleInfo(feature) {
     return {
       opacity: 1,
